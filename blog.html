@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-bars" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates & Online Programs for 2021</h1>
+
+    </section>
+
+<!---Blog Content--->
+
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg" alt="">
+            <h2>Our Certificates & Online Programs for 2021</h2>
+            <p>Quisque non diam pellentesque, congue elit vel, commodo ligula. Nulla tincidunt a turpis at volutpat. Praesent finibus est quam, ac malesuada tellus sagittis id. Vestibulum quis dolor sit amet augue vestibulum tincidunt at sit amet ligula. In pulvinar mattis dui, nec mattis purus facilisis vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc dui neque, consectetur id eleifend non, porttitor in tellus. Fusce semper accumsan nunc, porttitor placerat neque fringilla et. Sed eleifend dui id nibh porta, eu euismod purus aliquam. Nullam pretium efficitur volutpat. Praesent pellentesque ex nisl, sed suscipit tortor vehicula eget. Donec tincidunt enim in elit placerat cursus.</p>
+            <br>
+            <p>Pellentesque semper malesuada egestas. Nulla egestas, purus at efficitur tempus, dui dolor congue arcu, sed consectetur nisi tortor a nibh. Quisque lobortis enim quis vestibulum vestibulum. Vivamus sodales rhoncus lacinia. Cras hendrerit libero vel vestibulum luctus. Cras ac finibus metus. Mauris mi tortor, commodo eu semper sed, tincidunt ut purus. Integer nec malesuada est. Nulla facilisi. Curabitur a sem turpis. Ut nec dapibus metus, sit amet tincidunt justo.</p>
+            <br>
+            <p>Proin placerat convallis metus id rhoncus. Vestibulum tincidunt luctus euismod. Mauris tempus sapien ac mi lacinia, at pellentesque mi semper. Nam cursus luctus efficitur. Sed varius lorem eu nulla aliquam, congue pretium erat sagittis. In hac habitasse platea dictumst. Sed id orci accumsan, condimentum magna non, viverra sapien. In sagittis id neque eu porta. Pellentesque consequat felis ut vulputate eleifend. Vestibulum dictum rutrum ligula, in accumsan quam bibendum quis. Praesent at ligula id tellus vehicula maximus. Nulla sodales elit purus, ut placerat leo volutpat id. Nunc id ex nisi. Donec finibus augue aliquet sem bibendum ullamcorper.</p>
+        
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                </form>
+            </div>
+        
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>24</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Database Management</span>
+                <span>30</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!---FOOTER--->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Nullam id dignissim dolor. </p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+        <p>Made by Raizan</p>
+    </div>
+
+</section>
+
+
+<!-----JS for toggle menu---->
+<script type="text/javascript">
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

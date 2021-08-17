@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-bars" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+    </section>
+
+<!---About us Content--->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Donec a dolor nec nibh imperdiet semper.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae molestie ipsum, eget rhoncus orci. Suspendisse interdum scelerisque tellus, malesuada maximus risus aliquet ac. Aenean interdum at lacus a fringilla. Ut iaculis tristique velit, sit amet hendrerit lacus porttitor vitae. Phasellus cursus ex a diam facilisis scelerisque. Integer vulputate est vitae lobortis ullamcorper. Aliquam viverra, metus eget eleifend porta, urna lorem rhoncus ipsum, et commodo nunc nisl et lorem. Pellentesque id bibendum libero, a hendrerit nunc. Etiam id eros in orci tincidunt luctus sit amet in ante. Nulla eu posuere lorem, eget commodo orci. Curabitur sed placerat dui. Mauris pharetra felis eu cursus pulvinar. Nulla eleifend tristique tempus. Praesent convallis ex eget dolor maximus, nec lacinia ante pulvinar. Pellentesque enim turpis, convallis at nisi vel, luctus efficitur ex.</p>
+            <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        
+        <div class="about-col">
+            <img src="images/about.jpg">
+            
+        </div>
+    </div>
+</section>
+
+
+
+<!---FOOTER--->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Nullam id dignissim dolor. </p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+        <p>Made by Raizan</p>
+    </div>
+
+</section>
+
+
+<!-----JS for toggle menu---->
+<script type="text/javascript">
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
